@@ -117,7 +117,7 @@ Perfect, we're almost there!
 
 Now we have the address the elephant in the room... we still can't use quotes of any kind to build a string.<br />
 The original code we want to run is ```print(().__class__.__bases__[0].__subclasses__()[132].__init__.__globals__['system']('ls'))```. We can do all of this except for the **system** and **ls** strings.<br />
-To get around this we need to go back to the str class we found previously in the class dump. The useful aspect of this function comes from the fact that if you give it a dictionary or array, it will return the string version of that object. In python string objects can be substringed with indexes the same way you would an array.
+To get around this we need to go back to the str class we found previously in the class dump. The useful aspect of this function comes from the fact that if you give it a dictionary or array, it will return the string version of that object. In python string objects can be substringed with indices the same way you would an array.
 ```python
 print(str({'__name__': 'os'})[4]) #This results the letter n being printed
 ```
