@@ -87,7 +87,7 @@ class '_sitebuiltins.Quitter'
 class '_sitebuiltins._Printer'
 class '_sitebuiltins._Helper'
 ```
-This is an incredibly long list, but out of it there are a handful of important classes for what we're trying to acomplish.
+This is an incredibly long list, but out of it there are a couple important classes for what we're trying to accomplish.
 
 ```class 'str'``` is at postition 21 in the array and could be used to build a string without us inputting quotes.
 
