@@ -121,7 +121,7 @@ To get around this we need to go back to the str class we found previously in th
 ```python
 print(str({'__name__': 'os'})[4]) #This results the letter n being printed
 ```
-With this in mind we just need to pass in an object that has all the characters we need to build the string for **system** and **ls**. I decided to pass in the large function dump we got from running the above ```__init__.__globals__``` code. With this long string for our use in substringing we are now able to piece together the strings we need. I wrote a small script to build the payload for me.
+With this in mind we just need to pass in an object that has all the characters we need to build the string for **system** and **ls**. I decided to pass in the large function dump we got from running the above ```__init__.__globals__``` code. With this long string for our use in substringing we are now able to piece together the strings we need. I wrote a small [script](https://github.com/dwolfe884/CTFWriteups/blob/main/misc/HTBCTF_BuildYourselfIn/builder.py) to build the payload for me.
 
 The final payload I ended up using to cat out the flag.txt file was
 ```python
