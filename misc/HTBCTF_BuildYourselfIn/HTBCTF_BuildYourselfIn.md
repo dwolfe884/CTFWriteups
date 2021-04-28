@@ -16,7 +16,7 @@ Exiting..
 ```
 This is an important restriction to know about and one we will come back to later.
 For now the goal is to run some functions that have supposedly been removed from our environment with ```'__builtins__': None```.
-One thing we do have access to inside of this prompt is the use of tuples. Tuples are simple objects in python that allow for immutable lists. An empty tuple can be created as ```()``` in python. This may not seem very helpful on it's own, but what's important about tuples in python is that they inherit from the **Object** class.
+One thing we do have access to inside of this prompt is the use of tuples. Tuples are simple objects in python that are essentially immutable lists. An empty tuple can be created as ```()``` in python. This may not seem very helpful on it's own, but what's important about tuples in python is that they inherit from the **Object** class.
 using the python built-in attribute __class__ and __bases__ we're able to return a tuple containing the classes that an object inherits from.
 ```python
 print(().__class__.__bases__)
